@@ -24,10 +24,44 @@ body{
     padding:20px;
 }
 
-.content{
+/* .content{
     grid-area: content;
     background-color: #bbbbbb;
     padding: 20px
+} */
+
+/* Content */
+.content {
+    grid-column: 2;
+    padding: 0px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr; /* Four rows of equal height */
+}
+
+/* Example styles for each row */
+.content .row {
+    padding: 10px;
+}
+
+/* Row 1 */
+.content .row:nth-child(1) {
+    background-color: #f2f2f2;
+}
+
+/* Row 2 */
+.content .row:nth-child(2) {
+    background-color: #e6f7ff;
+}
+
+/* Row 3 */
+.content .row:nth-child(3) {
+    background-color: #f0f0f0;
+}
+
+/* Row 4 */
+.content .row:nth-child(4) {
+    background-color: #d9ead3;
+
 }
 
 .right-menu{
