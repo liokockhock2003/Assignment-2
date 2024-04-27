@@ -13,22 +13,33 @@ body{
 
 .header{
     grid-area: header;
-    background-color: gray;
-    color: #fff;
+    color: #FFFF;
     padding: 20px;
+    background-color: #080808;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0px 0px 0px;
+    /* position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; */
 }
 
 .left-menu{
     grid-area: left-menu;
-    background-color: #ddd;
+    background-color: #eb315a;
     padding-left: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 135px;
+    height: 100vh;
+    overflow-y: auto;
 }
-
-/* .content{
-    grid-area: content;
-    background-color: #bbbbbb;
-    padding: 20px
-} */
 
 /* Content */
 .content {
@@ -40,54 +51,65 @@ body{
 
 /* Example styles for each row */
 .content .row {
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 110px;
+    padding-bottom: 85px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* Style for the picture */
+.content .row > div.prof-pic img {
+    width: 300px;
+    border-radius: 0;
+    padding: 40px;
 }
 
 /* Row 1 */
 .content .row:nth-child(1) {
-    background-color: #f2f2f2;
+    background-color: #111111;
 }
-
 
 /* Row 2 */
 .content .row:nth-child(2) {
-    background-color: #e6f7ff;
-}
-
-.content .row:nth-child(2) div{
-    background-color: #e6f7ff;
-    position: absolute;
-    right: 150px;
+    background-color: #080808;
 }
 
 /* Row 3 */
 .content .row:nth-child(3) {
-    background-color: #f0f0f0;
+    background-color: #111111;
 }
 
 /* Row 4 */
 .content .row:nth-child(4) {
-    background-color: #d9ead3;
-
-}
-
-.content .row:nth-child(4) div{
-    background-color: #d9ead3;
-    position: absolute;
-    right: 150px;
+    background-color: #080808;
 }
 
 .right-menu{
     grid-area: right-menu;
-    background-color: #ddd;
+    background-color: #eb315a;
     padding: 0px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 135px;
+    height: 100vh;
+    overflow-y: auto;
 }
 
 .footer{
     grid-area: footer;
-    background-color: gray;
-    color: #fff;
+    color: #ffff;
     padding: 20px;
+    background-color: #080808;
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    font-weight: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*right-menu and left-menu list style*/
@@ -127,22 +149,24 @@ body{
 /*Personal Details style*/
 .name{
     font-family: "Nunito", sans-serif;
-    font-weight: 900;
-    font-size: 43px;
-    margin: 0px;
+    font-weight: 700;
+    font-size: 45px;
+    margin: 0px 0px 0px;
+    color: #FFFF;
 }
 .position{
     font-family: "Nunito", sans-serif;
-    font-weight: 750;
-    font-size: 30px;
+    font-weight: 500;
+    font-size: 40px;
     margin: 0px;
     color: #eb315a;
 }
 .description{
     font-family: "Nunito", sans-serif;
-    font-weight: 750;
-    font-size: 17px;
+    font-weight: 400;
+    font-size: 16px;
     margin: 0px;
+    color: #FFFF;
 }
 
 /* button style*/
