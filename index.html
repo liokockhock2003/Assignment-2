@@ -8,17 +8,15 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="icon" type="image/x-icon" href="xeroxLogo.ico">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-
     <!-- Header -->
     <header class = "header">
-        <img src="https://people.utm.my/wp-content/uploads/2019/03/LOGO-UTM.png" href="index.html" width="50px">
-        <h>
+        <img class="utm-logo" src="https://people.utm.my/wp-content/uploads/2019/03/LOGO-UTM.png" href="index.html" width="50px">
+        <h class="welcome">
             Welcome to our page
         </h>
-        <img src="https://people.utm.my/wp-content/uploads/2019/03/LOGO-UTM.png" href="index.html" width="50px">
     </header>
     <!-- End Header -->
 
@@ -46,7 +44,11 @@
     <!-- Content -->
     <main class = "content">
         <div class="row" id="about-us">
-            <h1 class = "name">TEAM XEROX</h1>
+            <a href="#">
+                <button onclick = "displayDescription()" class="team_button">
+                    <h1 class = "team_name">TEAM XEROX</h1>
+                </button>
+            </a>
         </div>
         <div class="row" id="row1">
             <div class="prof-pic">
@@ -66,9 +68,59 @@
                     </span>
                 </i>
             </button>
-            </div>     
+            </div>
+
+            <div>
+                <ul class="social">
+                    <li class="social_item">
+                        <a href="#">
+                            <i class="fa fa-facebook" ></i>
+                        </a>
+                    </li>
+                    <li class="social_item">
+                        <a href="#">
+                            <i class="fa fa-twitter" ></i>
+                        </a>
+                    </li>
+                    <li class="social_item">
+                        <a href="#">
+                            <i class="fa fa-instagram" ></i>
+                        </a>
+                    </li>
+                    <li class="social_item">
+                        <a href="#">
+                            <i class="fa fa-linkedin" ></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>   
+
         </div>
         <div class="row" id="row2">
+            <div>
+                <ul class="social">
+                    <li class="social_item">
+                        <a href="#">
+                            <i class="fa fa-facebook" ></i>
+                        </a>
+                    </li>
+                    <li class="social_item">
+                        <a href="#">
+                            <i class="fa fa-twitter" ></i>
+                        </a>
+                    </li>
+                    <li class="social_item">
+                        <a href="#">
+                            <i class="fa fa-instagram" ></i>
+                        </a>
+                    </li>
+                    <li class="social_item">
+                        <a href="#">
+                            <i class="fa fa-linkedin" ></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <div>
                 <h4 id = "C2" class = "name">Ahmad Saifudin</h4>
                 <b class = "position">Software Developer</b>
@@ -95,8 +147,8 @@
             </div>
             <div>
                 <h4 id = "C3" class = "name">Lio Kock Hock</h4>
-                <b class = "position">Software Developer</b>
-                <p class = "description">I'm UTM Student</p>
+                <b class = "position">UTM Undergraduate</b>
+                <p class = "description">I am Lio Kock Hock, currently pursuing a Bachelor's Degree in Software Engineering at the University of Technology Malaysia. My passion for technology and software development drives my dedication to learning and mastering programming, software design, and development methodologies. Throughout my academic journey, I blend theoretical knowledge with practical skills, aiming to prepare myself for a successful career in the dynamic field of software engineering. I am enthusiastic about technology and fully committed to becoming a skilled and innovative software engineer.</p>
                 <button type="button" class = "button">
                 <i class="button_items">
                     Download CV
@@ -107,7 +159,32 @@
                 </i>
             </button>
             </div>
+            <div>
+                <ul class="social">
+                    <li class="social_item">
+                        <a href="#">
+                            <i class="fa fa-facebook" ></i>
+                        </a>
+                    </li>
+                    <li class="social_item">
+                        <a href="#">
+                            <i class="fa fa-twitter" ></i>
+                        </a>
+                    </li>
+                    <li class="social_item">
+                        <a href="#">
+                            <i class="fa fa-instagram" ></i>
+                        </a>
+                    </li>
+                    <li class="social_item">
+                        <a href="#">
+                            <i class="fa fa-linkedin" ></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
+        
     </main>
     <!-- End Content -->
 
