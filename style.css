@@ -29,9 +29,9 @@ body{
     z-index: 1000; */
 }
 
-.utm-logo{
-    width: 150px;
-    padding-right: 15px;
+.xerox-logo{
+    width: 70px;
+    padding-right: 20px;
 }
 .welcome{
     font-size: 25px;
@@ -47,6 +47,7 @@ body{
     width: 135px;
     height: 100vh;
     overflow-y: auto;
+    box-shadow: -4px 0 40px rgba(0, 0, 0, 0.1);
 }
 
 /* Content */
@@ -64,13 +65,19 @@ body{
     justify-content: center;
     padding-top: 110px;
     padding-bottom: 85px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.content .row .team_name {
+    font-size: 200px;
+    font-weight: 400px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Style for the picture */
 .content .row > div.prof-pic img {
-    width: 400px;
+    width: 450px;
     border-radius: 0;
     padding: 40px;
 }
@@ -78,6 +85,16 @@ body{
 /* Row 1 */
 .content .row:nth-child(1) {
     background-color: #111111;
+    background-image: linear-gradient(to bottom right, #111111 50%, #eb315a 50%);
+}
+
+.content .row:nth-child(1) p {
+    color: white;
+    padding-top: 20px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: justify;
 }
 
 /* Row 2 */
@@ -95,6 +112,35 @@ body{
     background-color: #080808;
 }
 
+/* Row 5 */
+.content .row:nth-child(5) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #111111;
+}
+
+.content .row.row:nth-child(5) .title{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.content .row.row:nth-child(5) .columns{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.content .row.row:nth-child(5) .column{
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    background-color: #eb315a;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+
 .right-menu{
     grid-area: right-menu;
     background-color: #eb315a;
@@ -105,6 +151,7 @@ body{
     width: 135px;
     height: 100vh;
     overflow-y: auto;
+    box-shadow: -4px 0 40px rgba(0, 0, 0, 0.1);
 }
 
 .footer{
