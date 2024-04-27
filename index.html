@@ -14,18 +14,19 @@
 
     <!-- Header -->
     <header class = "header">
-        <img src="https://people.utm.my/wp-content/uploads/2019/03/LOGO-UTM.png" href="index.html" style="width: 100px; height:35px; text-align: center;">
-        <h style="padding:20px">
-            <b>Welcome to our page</b>
+        <img src="https://people.utm.my/wp-content/uploads/2019/03/LOGO-UTM.png" href="index.html" width="50px">
+        <h>
+            Welcome to our page
         </h>
+        <img src="https://people.utm.my/wp-content/uploads/2019/03/LOGO-UTM.png" href="index.html" width="50px">
     </header>
     <!-- End Header -->
 
     <!-- Left Menu -->
     <nav class = "left-menu">
         <ul class = "list">
-            <li class = "list_item"><a class = "list_link" href="#">Home</a></li>
-            <li class = "list_item"><a class = "list_link" href="#">About Us</a></li>
+            <li class = "list_item"><a class = "list_link" href="#about-us">Home</a></li>
+            <li class = "list_item"><a class = "list_link" href="#about-us">About</a></li>
             <li class = "list_item"><a class = "list_link" href="#">Contact</a></li>
         </ul>
     </nav>
@@ -35,21 +36,25 @@
     <nav class = "right-menu">
         <!-- <h5 class = "list_item">Group Members</h5> -->
             <ul class="list">
-                <li class = "list_item"><a class = "list_link" href="#C1">Hisyamuddin</a></li>
-                <li class = "list_item"><a class = "list_link" href="#C2">Saifudin</a></li>
-                <li class = "list_item"><a class = "list_link" href="#C3">Lio</a></li>
+                <li class = "list_item"><a class = "list_link" href="#">Hisyamuddin</a></li>
+                <li class = "list_item"><a class = "list_link" href="#">Saifudin</a></li>
+                <li class = "list_item"><a class = "list_link" href="#">Lio</a></li>
             </ul>
     </nav>
     <!-- End Right Menu -->
 
     <!-- Content -->
     <main class = "content">
-        <div class="row">
-            <h2 class = "name">Xerox</h2>
+        <div class="row" id="about-us">
+            <h1 class = "name">TEAM XEROX</h1>
         </div>
-        <div class="row">
+        <div class="row" id="row1">
+            <div class="prof-pic">
+                <!-- Left column for the picture -->
+                <img src="https://th.bing.com/th/id/R.73172a6bd46f8469d177cc77376a0176?rik=21xSHoAOdqeHeQ&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fpng-face-profile--700.png&ehk=MvcWYlcDNH4XVakF%2bziHz5AcT%2bHTY4ECd7cmiN34e9w%3d&risl=&pid=ImgRaw&r=0" alt="Profile Picture">
+            </div>
             <div>
-                <h4 id = "C1" class = "name">Hisyamuddin Firdaus</h4>
+                <h4 class = "name">Hisyamuddin Firdaus</h4>
                 <b class = "position">Software Developer</b>
                 <p class = "description">I'm UTM Student</p>
                 <button type="button" class = "button">
@@ -61,9 +66,9 @@
                     </span>
                 </i>
             </button>
-            </div>
+            </div>     
         </div>
-        <div class="row">
+        <div class="row" id="row2">
             <div>
                 <h4 id = "C2" class = "name">Ahmad Saifudin</h4>
                 <b class = "position">Software Developer</b>
@@ -78,8 +83,16 @@
                     </i>
                 </button>
             </div>
+            <div class="prof-pic">
+                <!-- Left column for the picture -->
+                <img src="https://th.bing.com/th/id/R.73172a6bd46f8469d177cc77376a0176?rik=21xSHoAOdqeHeQ&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fpng-face-profile--700.png&ehk=MvcWYlcDNH4XVakF%2bziHz5AcT%2bHTY4ECd7cmiN34e9w%3d&risl=&pid=ImgRaw&r=0" alt="Profile Picture">
+            </div>
         </div>
-        <div class="row">
+        <div class="row" id="row3">
+            <div class="prof-pic">
+                <!-- Left column for the picture -->
+                <img src="https://th.bing.com/th/id/R.73172a6bd46f8469d177cc77376a0176?rik=21xSHoAOdqeHeQ&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fpng-face-profile--700.png&ehk=MvcWYlcDNH4XVakF%2bziHz5AcT%2bHTY4ECd7cmiN34e9w%3d&risl=&pid=ImgRaw&r=0" alt="Profile Picture">
+            </div>
             <div>
                 <h4 id = "C3" class = "name">Lio Kock Hock</h4>
                 <b class = "position">Software Developer</b>
@@ -94,14 +107,13 @@
                 </i>
             </button>
             </div>
-            
         </div>
     </main>
     <!-- End Content -->
 
     <!-- Footer -->
     <footer class = "footer">
-        <p>&copy; 2024 Xerox. All rights reserved.</p>
+        <p>&copy; 2024 copyright Xerox all right reserved</p>
     </footer>
     <!-- End Footer -->
 </body>
