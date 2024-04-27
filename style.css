@@ -48,9 +48,16 @@ body{
     background-color: #f2f2f2;
 }
 
+
 /* Row 2 */
 .content .row:nth-child(2) {
     background-color: #e6f7ff;
+}
+
+.content .row:nth-child(2) div{
+    background-color: #e6f7ff;
+    position: absolute;
+    right: 150px;
 }
 
 /* Row 3 */
@@ -62,6 +69,12 @@ body{
 .content .row:nth-child(4) {
     background-color: #d9ead3;
 
+}
+
+.content .row:nth-child(4) div{
+    background-color: #d9ead3;
+    position: absolute;
+    right: 150px;
 }
 
 .right-menu{
@@ -94,6 +107,11 @@ body{
     font-size: 11px;
     text-decoration: none;
 }
+.list_link:hover{
+    color: #eb315a;
+    text-decoration: none;
+    transition: 0.3s;
+}
 
 
 /*Personal Details style*/
@@ -115,4 +133,31 @@ body{
     font-weight: 750;
     font-size: 17px;
     margin: 0px;
+}
+
+/* button style*/
+.button{
+    margin-top: 100px;
+    border-radius: 7px;
+    background-color: #eb315a;
+    border: none;
+    padding: 10px;
+}
+.button:hover{
+    background-color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+.button:hover i{
+    color: #eb315a;
+    transition: 0.3s;
+}
+.button_items{
+    display: inline-block;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    color : white;
+}
+.button_icon{
+    margin-left: 10px;
 }
