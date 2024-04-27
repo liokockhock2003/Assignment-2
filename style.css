@@ -1,5 +1,5 @@
 body{
-    margin: 0;
+    margin-top: 0;
     font-family: Arial, sans-serif;
     display: grid;
     grid-template-areas: 
@@ -23,10 +23,11 @@ body{
     font-weight: 400;
     font-size: 20px;
     margin: 0px 0px 0px;
-    /* position: fixed;
+    position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000; */
+    z-index: 1000;
+    box-shadow: 0 1px 20px #eb315a;
 }
 
 .xerox-logo{
@@ -44,10 +45,11 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    width: 135px;
+    width: 150px;
     height: 100vh;
     overflow-y: auto;
     box-shadow: -4px 0 40px rgba(0, 0, 0, 0.1);
+    padding-top: 90px;
 }
 
 /* Content */
@@ -56,6 +58,7 @@ body{
     padding: 0px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr; /* Four rows of equal height */
+    padding-top: 90px;
 }
 
 /* Example styles for each row */
@@ -63,16 +66,35 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 110px;
-    padding-bottom: 85px;
+    padding-top: 70px;
+    padding-bottom: 50px;
     padding-left: 20%;
     padding-right: 20%;
 }
 
-.content .row .team_name {
+.team_name {
     font-size: 200px;
     font-weight: 400px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.team_button{
+    background-color: #111111;
+    border-radius: 30px;
+    border: none;
+    color: #eb315a;
+}
+
+.team_button:hover{
+    background-color: #eb315a;
+    border-radius: 30px;
+    border: none;
+    color: #111111;
+}
+
+.team_button:hover{
+    color: #490e1b;
+    transition: 0.3s;
 }
 
 /* Style for the picture */
@@ -85,7 +107,7 @@ body{
 /* Row 1 */
 .content .row:nth-child(1) {
     background-color: #111111;
-    background-image: linear-gradient(to bottom right, #111111 50%, #eb315a 50%);
+    background-image: linear-gradient(to bottom right, #111111f6 50%, #eb315af6 50%), url(https://extension.harvard.edu/wp-content/uploads/sites/8/2020/10/computer-programming.jpg);
 }
 
 .content .row:nth-child(1) p {
@@ -98,18 +120,15 @@ body{
 }
 
 /* Row 2 */
-.content .row:nth-child(2) {
-    background-color: #080808;
+.content .row:nth-child(even) {
+    background-image: linear-gradient(0deg, #080808f6, #080808f6), url(https://www.udacity.com/blog/wp-content/uploads/2020/06/HTML_Blog-scaled.jpeg);
 }
 
 /* Row 3 */
 .content .row:nth-child(3) {
-    background-color: #111111;
-}
-
-/* Row 4 */
-.content .row:nth-child(4) {
-    background-color: #080808;
+    background-image: linear-gradient(0deg, #111111f6, #111111f6), url(https://wallpaperaccess.com/full/4137801.png);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Row 5 */
@@ -117,7 +136,9 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #111111;
+    background-image: linear-gradient(0deg, #111111f6, #111111f6), url(https://wallpaperaccess.com/full/4137801.png);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .content .row.row:nth-child(5) .title{
@@ -129,6 +150,15 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: row;
+}
+
+.content .row.row:nth-child(5) h{
+    font-size: 30px;
+    color:#111111;
+}
+
+.content .row.row:nth-child(5) p{
+    font-size: 16px;
 }
 
 .content .row.row:nth-child(5) .column{
@@ -143,21 +173,22 @@ body{
 
 .right-menu{
     grid-area: right-menu;
-    background-color: #eb315a;
     padding: 0px;
     position: fixed;
+    background-color: #eb315a;
     top: 0;
     right: 0;
-    width: 135px;
+    width: 150px;
     height: 100vh;
     overflow-y: auto;
     box-shadow: -4px 0 40px rgba(0, 0, 0, 0.1);
+    padding-top: 90px;
 }
 
 .footer{
     grid-area: footer;
     color: #ffff;
-    padding: 20px;
+    height: 90px;
     background-color: #080808;
     font-family: "Nunito", sans-serif;
     font-size: 14px;
@@ -174,15 +205,15 @@ body{
 }
 .list_item{
     padding: 20px 20%;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid #b70028;
 }
 .list_link:link{
-    padding: 0 10px;
+    padding: 0px;
     text-decoration: none;
     color: #000000;
-    font-weight: 900;
+    font-weight: 500;
     text-transform: uppercase;
-    font-size: 11px;
+    font-size: 13px;
     transition: 0.3s;
 }
 .list_link:visited{
@@ -202,22 +233,6 @@ body{
 
 
 /*Personal Details style*/
-.team_name{
-    font-family: "Nunito", sans-serif;
-    font-weight: 700;
-    font-size: 45px;
-    margin: 0px 0px 0px;
-    color: #FFFF;
-    transition: 0.3s;
-}
-.team_button{
-    background-color: #111111;
-    border: none;
-}
-.team_name:hover{
-    font-size: 60px;
-    color: #eb315a;
-}
 .name{
     font-family: "Nunito", sans-serif;
     font-weight: 700;
