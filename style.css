@@ -67,6 +67,15 @@ html {
 
 /* Example styles for each row */
 .content .row {
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.content .personal-details{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -98,7 +107,7 @@ html {
 }
 
 /* Style for the picture */
-.content .row > div.prof-pic img {
+.content .row .personal-details> div.prof-pic img {
     width: 450px;
     border-radius: 0;
     padding: 40px;
@@ -312,3 +321,101 @@ html {
 .social_item:hover i{
     color: #ffffff;
 }
+
+
+/* Skill */
+.skill h1{
+    /* text-align: center; */
+    font-weight: 800;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    padding-bottom: 10px;
+}
+.skill h3{
+    color: white;
+    font-family: "Nunito", sans-serif;
+}
+.skill{
+    width: 100%;
+    padding: 20px;;
+    margin-left: 100px;
+}
+.skill-list{
+    list-style: none;
+    margin: 20px 0px;
+    padding: 0px
+}
+
+.skill li{
+    margin: 20px 0px;
+}
+.bar span{
+    background: #eb315a;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.html{
+    width: 90%;
+    animation: html 3s;
+}
+.css{
+    width: 80%;
+    animation: css 3s;
+}
+.c{
+    width: 67%;
+    animation: c 3s;
+}
+.java{
+    width: 45%;
+    animation: java 3s;
+}
+.javascript{
+    width: 78%;
+    animation: javascript 3s;
+}
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes c{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 67%;
+    }
+}
+@keyframes java{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 45%;
+    }
+}
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 78%;
+    }
+}
+
