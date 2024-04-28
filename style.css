@@ -11,6 +11,10 @@ body{
     min-height: 100vh;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .header{
     grid-area: header;
     color: #FFFF;
@@ -83,6 +87,7 @@ body{
     border-radius: 30px;
     border: none;
     color: #eb315a;
+    transition: 0.3s;
 }
 
 .team_button:hover{
@@ -90,11 +95,6 @@ body{
     border-radius: 30px;
     border: none;
     color: #111111;
-}
-
-.team_button:hover{
-    color: #490e1b;
-    transition: 0.3s;
 }
 
 /* Style for the picture */
