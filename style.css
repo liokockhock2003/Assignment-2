@@ -233,7 +233,7 @@ html {
     flex-direction: column;
     justify-content: space-around;
 }
-.list_link{
+.list_link:link{
     padding: 0px;
     text-decoration: none;
     color: #ffffff;
@@ -244,6 +244,10 @@ html {
 }
 .list_item:hover{
     cursor: pointer;
+}
+.list_link:visited{
+    color: white;
+    text-decoration: none;
 }
 .list_item:hover .list_link{
     color: #eb315a;
@@ -270,9 +274,6 @@ html {
     padding: 10px 25px;
 }
 .list_item:hover ul{
-    display: block;
-}
-.list_item:hover ul a{
     display: block;
 }
 .list-name-link:hover{
