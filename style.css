@@ -4,10 +4,10 @@ body{
     display: grid;
     grid-template-areas: 
     "header header header"
-    "left-menu content right-menu"
+    "content content content"
     "footer footer footer";
-    grid-template-columns: 150px 1fr 150px;
-    grid-template-rows: auto 1fr auto;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
     min-height: 100vh;
 }
 
@@ -23,7 +23,6 @@ html {
     display: grid;
     grid-template-areas: "logo list";
     grid-template-rows: 1fr auto;
-    /* justify-content: center; */
     align-items: center;
     font-family: "Nunito", sans-serif;
     font-weight: 400;
@@ -42,25 +41,11 @@ html {
 }
 
 .xerox-logo{
-    width: 70px;
+    width: 60px;
     padding-right: 20px;
 }
 .welcome{
-    font-size: 25px;
-}
-
-.left-menu{
-    grid-area: left-menu;
-    background-color: #eb315a;
-    padding-left: 0px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 150px;
-    height: 100vh;
-    overflow-y: auto;
-    box-shadow: -4px 0 40px rgba(0, 0, 0, 0.1);
-    padding-top: 90px;
+    font-size: 18px;
 }
 
 /* Content */
@@ -68,8 +53,8 @@ html {
     grid-column: 2;
     padding: 0px;
     display: grid;
-    grid-template-rows: auto 1fr 1fr 1fr; /* Four rows of equal height */
-    padding-top: 90px;
+    padding-top: 75px;
+    width: 100%;
 }
 
 /* Example styles for each row */
@@ -88,8 +73,6 @@ html {
     justify-content: center;
     padding-top: 70px;
     padding-bottom: 50px;
-    padding-left: 20%;
-    padding-right: 20%;
 }
 
 .team_name {
@@ -126,7 +109,7 @@ html {
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: #111111;
-    background-image: linear-gradient(to bottom right, #111111f6 50%, #eb315af6 50%), url(https://extension.harvard.edu/wp-content/uploads/sites/8/2020/10/computer-programming.jpg);
+    background-image: linear-gradient(150deg, #111111f6 50%, #eb315af6 50%), url(https://extension.harvard.edu/wp-content/uploads/sites/8/2020/10/computer-programming.jpg);
 }
 
 .content .row:nth-child(1) p {
@@ -160,7 +143,7 @@ html {
     background-repeat: no-repeat;
 }
 
-.content .row.row:nth-child(5) .title{
+.content .row:nth-child(5) .title, .content .row:nth-child(6) .title {
     text-align: center;
     margin-top: 20px;
 }
@@ -173,7 +156,7 @@ html {
 
 .content .row.row:nth-child(5) h{
     font-size: 30px;
-    color:#111111;
+    color:#eb315a;
 }
 
 .content .row.row:nth-child(5) p{
@@ -184,24 +167,14 @@ html {
     flex: 1;
     padding: 10px;
     text-align: center;
-    background-color: #eb315a;
+    background-color: #080808;
     border-radius: 10px;
-    padding: 20px;
+    padding: 30px;
     margin: 20px;
 }
 
-.right-menu{
-    grid-area: right-menu;
-    padding: 0px;
-    position: fixed;
-    background-color: #eb315a;
-    top: 0;
-    right: 0;
-    width: 150px;
-    height: 100vh;
-    overflow-y: auto;
-    box-shadow: -4px 0 40px rgba(0, 0, 0, 0.1);
-    padding-top: 90px;
+.content .row.row:nth-child(6) {
+    background-image: linear-gradient(185deg, #080808 80%, #eb315af6 20%), url(https://extension.harvard.edu/wp-content/uploads/sites/8/2020/10/computer-programming.jpg);
 }
 
 .footer{
@@ -212,7 +185,7 @@ html {
     font-family: "Nunito", sans-serif;
     font-size: 14px;
     font-weight: 400px;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
 }
@@ -368,7 +341,7 @@ html {
 /* Skill */
 .skill h1{
     /* text-align: center; */
-    font-weight: 800;
+    font-weight: 700;
     color: white;
     font-family: "Nunito", sans-serif;
     padding-bottom: 10px;
@@ -376,10 +349,11 @@ html {
 .skill h3{
     color: white;
     font-family: "Nunito", sans-serif;
+    font-size: 20px;
 }
 .skill{
-    width: 100%;
-    padding: 20px;;
+    width: 60%;
+    padding: 0px;
     margin-left: 100px;
 }
 .skill-list{
@@ -460,4 +434,23 @@ html {
         width: 78%;
     }
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 30px;
+    padding-top: 30px;
+}
+
+.grid-item {
+    overflow: hidden;
+    height: 500px;
+}
+
+.grid-item img {
+    width: 100%; /* Make images fill their container */
+    height: auto; /* Maintain aspect ratio */
+}
+
 
