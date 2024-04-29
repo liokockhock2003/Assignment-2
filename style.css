@@ -20,8 +20,10 @@ html {
     color: #FFFF;
     padding: 20px;
     background-color: #080808;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-areas: "logo list";
+    grid-template-rows: 1fr auto;
+    /* justify-content: center; */
     align-items: center;
     font-family: "Nunito", sans-serif;
     font-weight: 400;
@@ -32,6 +34,11 @@ html {
     width: 100%;
     z-index: 1000;
     box-shadow: 0 1px 20px #eb315a;
+}
+
+.logo{
+    position: relative;
+    left: 150px
 }
 
 .xerox-logo{
@@ -212,35 +219,66 @@ html {
 
 /*right-menu and left-menu list style*/
 .list{
-    padding-left: 0px;
+    display: flex;
+    position: absolute;
+    right: 140px;
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 .list_item{
-    padding: 20px 20%;
-    border-bottom: 1px solid #b70028;
+    padding: 20px 60px;
 }
-.list_link:link{
+.list_item div{
+    flex-direction: column;
+    justify-content: space-around;
+}
+.list_link{
     padding: 0px;
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     font-weight: 500;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 15px;
     transition: 0.3s;
 }
-.list_link:visited{
-    color: #000000;
+.list_item:hover{
+    cursor: pointer;
+}
+.list_item:hover .list_link{
+    color: #eb315a;
     text-decoration: none;
 }
-.list_link:hover{   
+.list-name{
+    display: none;
+    position: absolute;
+    background-color: #080808;
+    padding: 0px;
+    margin-top: 5px;
+    border-radius: 10px;
+    right: 35px;
+    box-shadow: 2px 2px 5px rgba(238,49,90, 0.8);
+}
+.list-name-link{
     color: white;
+    transition: 0.3s;
+}
+.list-name-item{ 
+    text-align: center;
+    display: block;
+    list-style: none;
+    padding: 10px 25px;
+}
+.list_item:hover ul{
+    display: block;
+}
+.list_item:hover ul a{
+    display: block;
+}
+.list-name-link:hover{
+    color:#eb315a;
     text-decoration: none;
 }
-.list_link:active{
-    color: black;
-    transition: 0.1s;
-}
-
 
 
 
