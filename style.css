@@ -61,7 +61,7 @@ html {
     grid-column: 2;
     padding: 0px;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr; /* Four rows of equal height */
+    grid-template-rows: auto 1fr 1fr 1fr; /* Four rows of equal height */
     padding-top: 90px;
 }
 
@@ -115,6 +115,9 @@ html {
 
 /* Row 1 */
 .content .row:nth-child(1) {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
     background-color: #111111;
     background-image: linear-gradient(to bottom right, #111111f6 50%, #eb315af6 50%), url(https://extension.harvard.edu/wp-content/uploads/sites/8/2020/10/computer-programming.jpg);
 }
