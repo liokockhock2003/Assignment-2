@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     margin-top: 0;
     font-family: Arial, sans-serif;
@@ -11,10 +15,7 @@ body{
     min-height: 100vh;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
+/* Header */
 .header{
     grid-area: header;
     color: #FFFF;
@@ -57,7 +58,7 @@ html {
     width: 100%;
 }
 
-/* Example styles for each row */
+/* Styles for each row */
 .content .row {
     align-items: center;
     justify-content: center;
@@ -177,19 +178,6 @@ html {
     background-image: linear-gradient(185deg, #080808 80%, #eb315af6 20%), url(https://extension.harvard.edu/wp-content/uploads/sites/8/2020/10/computer-programming.jpg);
 }
 
-.footer{
-    grid-area: footer;
-    color: #ffff;
-    height: 90px;
-    background-color: #080808;
-    font-family: "Nunito", sans-serif;
-    font-size: 14px;
-    font-weight: 400px;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}
-
 /*right-menu and left-menu list style*/
 .list{
     display: flex;
@@ -254,8 +242,6 @@ html {
     text-decoration: none;
 }
 
-
-
 /*Personal Details style*/
 .name{
     font-family: "Nunito", sans-serif;
@@ -280,8 +266,6 @@ html {
     color: #FFFF;
     text-align: justify;
 }
-
-
 
 /* button style*/
 .button{
@@ -309,7 +293,6 @@ html {
     margin-left: 10px;
 }
 
-
 /* Social Medio Icons */
 .social{
     list-style: none;
@@ -336,7 +319,6 @@ html {
 .social_item:hover i{
     color: #ffffff;
 }
-
 
 /* Skill */
 .skill h1{
@@ -449,8 +431,22 @@ html {
 }
 
 .grid-item img {
-    width: 100%; /* Make images fill their container */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    height: auto; 
 }
+
+/*Footer*/
+.footer{
+    grid-area: footer;
+    color: #ffff;
+    height: 90px;
+    background-color: #080808;
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    font-weight: 400px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}    
 
 
